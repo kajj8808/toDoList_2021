@@ -3,3 +3,5 @@ git remote add origin /*url*/
 git add .
 git commit -m "day_~"
 git push origin master
+
+/*error: failed to push some refs to => https://gamtoggi.tistory.com/83*/
