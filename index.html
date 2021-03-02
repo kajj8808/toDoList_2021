@@ -5,33 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/styles.css" />
-    <link rel="stylesheet" href="./dist/css/reset.css">
+    <link rel="stylesheet" href="./dist/css/reset.css" />
     <title>Document</title>
   </head>
-  <body>
-    <ul class="calendar">
-      <li class="item">
-        <p>일</p>
-      </li>
-      <li class="item">
-        <p>월</p>
-      </li>
-      <li class="item">
-        <p>화</p>
-      </li>
-      <li class="item">
-        <p>수</p>
-      </li>
-      <li class="item">
-        <p>목</p>
-      </li>
-      <li class="item">
-        <p>금</p>
-      </li>
-      <li class="item">
-        <p>토</p>
-      </li>
-    </ul>
+  <body ontouchstart>
+    <section class="main">
+      <div class="yearMonth">
+        <div class="year"></div>
+        <div class="month"></div>
+      </div>
+      <ul class="calendar">
+        <li class = "week_day">
+          <p>일</p>
+        </li>
+        <li class = "week_day">
+          <p>월</p>
+        </li>
+        <li class = "week_day">
+          <p>화</p>
+        </li>
+        <li class = "week_day">
+          <p>수</p>
+        </li>
+        <li class = "week_day">
+          <p>목</p>
+        </li>
+        <li class = "week_day">
+          <p>금</p>
+        </li>
+        <li class = "week_day">
+          <p>토</p>
+        </li>
+      </ul>
+    </section>
   </body>
   <script src="./js/calendar.js"></script>
 </html>

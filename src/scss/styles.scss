@@ -1,7 +1,62 @@
+$vitical : 50px;
+$horizontal : 50px;
 .calendar{
-  width: 100vh;
-  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(7 , 50px);
-  grid-template-rows: repeat(5 , 50px);
+  grid-template-columns: repeat(7 , $vitical);
+  grid-template-rows: repeat(6 , $horizontal);
+  .to_day{
+    background-color: #1f1f1f;
+    color: white;
+  }
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active {
+      border: 5px;
+      border-style: solid;
+      border-color: black;
+    }
+  }
+  .day{
+    &:hover{
+      background-color: gray;
+      color: white;
+    }
+    &:active{
+      background-color: gray;
+      color: white;
+    }
+  }
+  .last_month_day{
+    color: gray;
+    &:hover{
+      background-color: gray;
+      color: white;
+    }
+  }
+  .next_month_day{
+    color: gray;
+    &:hover{
+      background-color: gray;
+      color: white;
+    }
+  }
+  .week_day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body{
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
