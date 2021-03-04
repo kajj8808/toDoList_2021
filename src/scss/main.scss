@@ -1,0 +1,72 @@
+@import "./elements";
+@import "./variables";
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  @include columnCenter();
+  background: linear-gradient(#e66465, #9198e5);
+  font-family: "Roboto", sans-serif;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.book_mark_area {
+  width: 770px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    align-self: flex-start;
+  }
+  .book_mark_form {
+    position: absolute;
+    display: none;
+    border-radius: 6px;
+    width: 500px;
+    height: 150px;
+    @include columnCenter();
+    background-color: #1f1f1f1f;
+    h4 {
+      align-self: center;
+    }
+    input {
+      width: 360px;
+      height: 35px;
+      border-radius: 5px;
+    }
+    button {
+    }
+  }
+  .book_mark_list {
+    margin-top: 10px;
+    display: grid;
+    height: 170px;
+    overflow: auto;
+    grid-template-columns: repeat(5, 150px);
+    grid-auto-rows: 87px;
+    margin-top: 5px;
+    .item {
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 145px;
+      height: 82px;
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 0 1px 0 rgba(0, 0, 4, 0.1); */
+    }
+    .add_btn {
+      /* add btn 은 항상뒤로 오게. */
+      font-size: 40px;
+      order: 2;
+    }
+  }
+}

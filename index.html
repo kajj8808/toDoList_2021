@@ -3,41 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/styles.css" />
     <link rel="stylesheet" href="./dist/css/reset.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Main Page</title>
   </head>
-  <body ontouchstart>
-    <section class="main">
-      <div class="yearMonth">
-        <div class="year"></div>
-        <div class="month"></div>
-      </div>
-      <ul class="calendar">
-        <li class = "week_day">
-          <p>일</p>
-        </li>
-        <li class = "week_day">
-          <p>월</p>
-        </li>
-        <li class = "week_day">
-          <p>화</p>
-        </li>
-        <li class = "week_day">
-          <p>수</p>
-        </li>
-        <li class = "week_day">
-          <p>목</p>
-        </li>
-        <li class = "week_day">
-          <p>금</p>
-        </li>
-        <li class = "week_day">
-          <p>토</p>
-        </li>
+  <body>
+    <div class="book_mark_area">
+      <form class="book_mark_form">
+        <h4>즐겨찾기 추가</h4>
+        <input type="button" class = "form_close_btn" value = "x">
+        <input
+          class="book_mark_url"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="URL 을 입력 후 추가를 눌러주세요."
+        />
+        <input
+          class="book_mark_name"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="이름"
+        />
+        <button type="submit">제출</button>
+      </form>
+      <h4>Book Mark</h4>
+      <ul class="book_mark_list">
+        <li class="item add_btn">+</li>
       </ul>
-    </section>
+    </div>
+    <script src="./BookMark.js"></script>
   </body>
-  <script src="./js/calendar.js"></script>
 </html>
